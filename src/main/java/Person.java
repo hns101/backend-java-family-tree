@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Person {
     private String name;
@@ -119,14 +118,16 @@ public class Person {
         siblings.add(sibling);
     }
 
-    public void getGrandChildren() {
+    public ArrayList getGrandChildren() {
      for (int i = 0; i < children.size(); i++) {
          if (children.get(i) instanceof Person) {
-             System.out.println(children.get(i).getChildren());
+             ArrayList x = children.get(i).getChildren();
+             return x ;
          }
 
      }
 
+        return null;
     }
 
     @Override

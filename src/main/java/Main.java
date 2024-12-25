@@ -47,7 +47,7 @@ public class Main {
 
         // Get Grandchild
 
-        carolien.getGrandChildren();
+        System.out.println(carolien.getGrandChildren());
 
     }
 }
